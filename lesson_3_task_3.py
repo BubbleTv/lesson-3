@@ -1,7 +1,11 @@
 from address import Address
 from mailing import Mailing
 
+ by
+
+
 # Создаем адрес отправителя
+ main
 from_address = Address(
     "123456",
     "Москва",
@@ -10,7 +14,10 @@ from_address = Address(
     "78"
 )
 
-# Создаем адрес получателя
+ by
+
+
+ main
 to_address = Address(
     "654321",
     "Санкт-Петербург",
@@ -19,7 +26,9 @@ to_address = Address(
     "42"
 )
 
-# Создаем экземпляр класса Mailing
+ by
+
+ main
 mailing = Mailing(
     to_address=to_address,
     from_address=from_address,
@@ -27,7 +36,8 @@ mailing = Mailing(
     track="TRK123456789"
 )
 
-# Распечатываем информацию об отправлении
+ by
+ main
 print(f"Отправление {mailing.track} из {mailing.from_address.index}, "
       f"{mailing.from_address.city}, {mailing.from_address.street}, "
       f"{mailing.from_address.house} - {mailing.from_address.apartment} в "
